@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Volumes/winddev/workingroot/commons/FileLibrary/app/build/intermediates/exploded-aar/FileLibrary/library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d1f852e3559fad47e5cc751f47d944dd7bb4d347">
+        <dex dex="/Volumes/winddev/workingroot/commons/FileLibrary/app/build/intermediates/pre-dexed/debug/FileLibrary-library-unspecified_4479a43f2f8711ef0b9831ad03985b9e25bb1ab7.jar" />
+    </item>
+
+</items>
