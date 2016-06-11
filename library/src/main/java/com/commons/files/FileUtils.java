@@ -1,4 +1,4 @@
-package com.commons;
+package com.commons.files;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

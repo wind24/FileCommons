@@ -1,5 +1,6 @@
-package com.commons;
+package com.commons.data;
 
+import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -25,6 +26,10 @@ public class DataReader {
 
   public DataReader(InputStream is) {
     dis = new DataInputStream(is);
+  }
+
+  public DataReader(byte[] input){
+    dis = new DataInputStream(new ByteArrayInputStream(input));
   }
 
   public byte readByte() {
@@ -85,6 +90,36 @@ public class DataReader {
     }
 
     return null;
+  }
+
+  public long readLong(){
+    if(dis!=null) try {
+      return dis.readLong();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    return 0;
+  }
+
+  public double readDouble(){
+    if(dis!=null) try {
+      return dis.readDouble();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    return 0;
+  }
+
+  public short readShort(){
+    if(dis!=null) try {
+      return dis.readShort();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    return 0;
   }
 
 }
